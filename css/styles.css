@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
-
 :root {
     --bg-color:rgb(34, 40, 49);
     --second-bg-color:rgb(220,220,220);
@@ -19,11 +18,9 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
 @media(min-width:1285px) {
     html {
         font-size: 90%;
-
     }
     .achievement-title {
         margin: auto;
@@ -42,45 +39,29 @@ html {
         margin-top: 8rem;
         text-align: center;
     }
-
 }
-
-
 @media(max-width:1285px){
     html:not(.active-two) {
         font-size: 70%;
-
-
     }
     .achievement-title {
         margin: auto;
     }
-
     .main-nav, .sidebar {
         font-size: 140%;
     }
    div div h2 {
         text-align: center;
     }
-    .achievement-item{
-        
+    .achievement-item{  
         align-items: center;
         gap: 10rem;
         margin-top: 8rem;
         text-align: center;
     }
-
-
-
- 
- 
-
-
-    /* service container */
-
+    /* service containernya mana woy*/
 }
 @media(max-width:991px) {
- 
     section {
         padding: 10rem 3% 2rem;
 
@@ -92,7 +73,6 @@ html {
     .social-button {
         margin: auto;
     }
-    
     #menu-icon {
         display: block;
     }
@@ -104,16 +84,13 @@ html {
     }
    .home-content h3 {
     font-size: 2.5rem;
-
    }
-
    .home-content h1 {
     font-size: 8rem;
     margin-top: 3rem;
    }
    .home-content p {
     max-width: 600px;
-    
    }
    .achievement-item{
     flex-direction: column;
@@ -128,22 +105,16 @@ html {
     .home h2 {
         text-align: center;
     }
-
 }
 @media(max-width:500px) {
- 
-    html {
-        font-size: 60%;
+    .hideOnMobile {
+        display: none;
     }
-
-
 }
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     min-height: 100vh;
-    
 }
 .header {
     position: fixed;
@@ -158,15 +129,11 @@ body {
     justify-content: space-between;
     z-index: 100;
     background-image: s;
-
 }
-
-
 .logo-icon {
     height: 50px;
     width: 50px;
     border:1px solid black
-
 }
 /* Ini Untuk Main Nav*/
 html nav {
@@ -174,27 +141,19 @@ html nav {
     margin: 0px;
     box-sizing: border-box;
 }
-
 body {
     background-color: var(--bg-color)
     
 }
-
-
-
 .main-nav {
     background-color: rgb(220,220,220);
     display: flex;
     justify-content: space-between;
     padding: 10px 2rem;
-    
-
 }
 .main-nav div img {
     width: 100px;
 }
-
-
 .main-nav ul {
     display: flex;
     list-style: none;
@@ -208,7 +167,6 @@ body {
     transition: all;
     transition-duration: 300ms;
     border-bottom: 1px solid rgba(215, 170, 170, 0.085) ;
-
 }
 .main-nav ul li a:hover {
     border-bottom: 1px solid black;
@@ -218,9 +176,7 @@ body {
     padding: 5px 10px;
 }
 /* Ini Untuk Sidebar */
-
-.sidebar {
-                
+.sidebar {           
     position: fixed;
     padding-top: 1rem;
     top: 0;
@@ -255,7 +211,6 @@ body {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .sidebar a:hover {
     background-color: #f0f0f0;
     transition-duration: 300ms;
@@ -271,7 +226,6 @@ section {
     align-items: center;
     gap: 1rem;
     justify-content: space-between;
-
 }
 .home-content {
     display: flex;
@@ -280,8 +234,6 @@ section {
     text-align: left;
     justify-content: center;
     margin-top: 7rem;
-    
-
 }
 span {
     color: var(--main-color);
@@ -302,7 +254,6 @@ span {
     margin-bottom: 10px;
     line-height: 1;
 }
-
 .logo-span {
     color: rgb(220,220,220);
 }
@@ -311,8 +262,6 @@ span {
     display: inline;
     float: none;
     margin: auto;
-
-    
 }
 .home-img img {
     position: relative;
@@ -322,20 +271,16 @@ span {
     box-shadow: 0 0 25px;
     cursor: pointer;
     transition: 0.4s ease-in-out;
-
 }
 .home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 10px var(--main-color);
-
 }
 .home-content {
     font-size: 1.5rem;
     font-weight: 500;
     max-width:1000px;
-
-
 }
 .social-button img{
     display: inline-flex;
@@ -345,7 +290,6 @@ span {
     background: transparent;
     margin: 1rem 1.5rem 3rem 0rem;
 }
-
 .achievement-box {
     background-color: rgba(0, 0, 0, 0.29);
     border-radius: 25px;
@@ -353,36 +297,36 @@ span {
 .container {
     padding: 2rem;
 }
-
 .slider-wrapper {
     position: relative;
     margin: 0 auto;
 }
-
 .slider {
     margin-top: 3rem;
     display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain;
     aspect-ratio: 16 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 1rem;
-    -ms-overflow-style: none; /* Scrollbar hidden */
-    scrollbar-width: none; /* Hide scrollbar */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
-
-/* Hide scrollbar in WebKit browsers */
+/* biar bagus hilangin scrollbarr*/
 .slider::-webkit-scrollbar {
     display: none;
 }
-
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
 }
-
 .slider-nav {
     display: flex;
     column-gap: 1rem;
@@ -392,20 +336,17 @@ span {
     transform: translateX(-50%);
     z-index: 1;
 }
-
 .slider-nav a {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--text-color);
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
-
 .slider-nav a:hover {
     opacity: 1;
 }
-
 .heading {
     font-size: 3.5rem;
     margin-top: 5rem;
@@ -413,11 +354,7 @@ span {
     padding-top: 4rem;
     padding-bottom: 2rem;
     color: var(--text-color);
-    
-    
 }
-
-
 .achievement-item {
     display: flex;
     justify-content: space-between;
@@ -426,19 +363,13 @@ span {
     font-size: 20px;
     padding-bottom: 4rem;
 }
-
-
 .timo {
     height: 15rem;
     margin-left: 1%;
-    
 }
 .annimah {
     height: 15rem;
     justify-self: center;
-
-  
-
 }
 .jambore  {
     height: 15rem;
@@ -446,7 +377,6 @@ span {
 .achievement-info {
     text-align: center;
 }
-
 .header-of-contact h1 {
     text-align: center;
     font-size: 5rem;
@@ -455,9 +385,7 @@ span {
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 1px;
- 
 }
-
 .contactku {
     position: relative;
     padding-top: 1rem ;
@@ -476,26 +404,17 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .contact-item a {
     text-decoration: none;
-
     color: white;
     font-size: 3rem;
-
 }
-
-
 .woka {
     margin-top: 3rem;
     display: flex;
-    
-   
-    
 }
 .contact {
-    
     padding-bottom: 3rem;
     border-width: 3rem;
 }
@@ -509,7 +428,6 @@ span {
     height: 100vh;
     align-items: center;
     justify-content: center;
-
 }
 .login-section {
     width: 400px;
@@ -518,7 +436,6 @@ span {
     background: var(--main-color);
     border-radius: 20px;
     box-shadow: 0 0 20 10px rgba(0, 0, 0,0.4);
-
 }
 .active-two {
     background-color: var(--main-color) ;
@@ -532,8 +449,6 @@ span {
 .footerin {
     gap: 1rem !important;
 }
-
-
 /* popupnyaaa */
 .popup-form-container {
     display: none;
@@ -546,7 +461,6 @@ span {
     justify-content: center;
     align-items: center;
 }
-
 .popup-form {
     background-color: #fff;
     padding: 20px;
@@ -556,23 +470,19 @@ span {
     max-width: 400px;
     position: relative;
 }
-
 .popup-form h2 {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
 }
-
 .popup-form .form-group {
     margin-bottom: 15px;
 }
-
 .popup-form .form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 .popup-form .form-group input,
 .popup-form .form-group textarea {
     width: 100%;
@@ -581,11 +491,9 @@ span {
     border-radius: 4px;
     font-size: 16px;
 }
-
 .popup-form .form-group textarea {
     resize: vertical;
 }
-
 .popup-form button {
     display: block;
     width: 100%;
@@ -598,11 +506,9 @@ span {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .popup-form button:hover {
     background-color: var(--bg-color);
 }
-
 .close-btn {
     position: absolute;
     top: 10px;

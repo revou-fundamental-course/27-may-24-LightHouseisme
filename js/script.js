@@ -63,8 +63,8 @@ function validateForm() {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    if (name.length < 5 || subject.length < 5 || message.length < 5) {
-        alert('Name, Subject, and Message must be at least 5 characters long.');
+    if (name.length < 1 || subject.length < 1 || message.length < 1) {
+        alert('Name, Subject, and Message must be at least 1 characters long.');
         return false;
     }
 
